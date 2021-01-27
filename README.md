@@ -3,8 +3,6 @@ A fully functional easily customizable data logger for Unity 2019 and up.
 
 Any experiments requires the collection of data. Unity isn't strictly made for doing experiments (it is a game-engine after all), so there aren't any built-in solutions to achieve this.
 
-In my thesis ([[Unity Simulation: Visual Feedback for Haptic Assisted Teleoperation of an Industrial Robot (Dross Skimming Project)]]) I created a set of data logging scripts that I later extended the package explained in this page.
-
 ## Files
 - The Unity DataLogging Package
 - Made for Unity 2019.4.18f but should work in any version.
