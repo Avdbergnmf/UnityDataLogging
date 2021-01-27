@@ -28,9 +28,10 @@ This example explains how to log the properties of a RigidBody.
 
 #### Create a new logger
 It is quite simple to create your own custom loggers to log any sort of data you would like to (as long as it can be converted to strings). To do so simply create a new script that inherits from the `Logger` class, make sure it has the following properties:
-1 - Run the `Initialize()` function in the `Start()`
-2 - have a `public getData()` function that returns a `string[]` object containing the data to be logged
-3 - have a `public string[] reportHeaders` variable which contains all the headers used for the logged file (ie explains the type of data that is logged)
+1. Run the `Initialize()` function in the `Start()`
+2. have a `public getData()` function that returns a `string[]` object containing the data to be logged
+3. have a `public string[] reportHeaders` variable which contains all the headers used for the logged file (ie explains the type of data that is logged)
+
 Optionally also include:
 - A public string `fileNamePrefix` which will indicate which type of data is being logged in the log its filename
 
