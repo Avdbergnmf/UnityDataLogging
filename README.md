@@ -74,3 +74,9 @@ Additionally if you want to log multiple times every log call you may want to us
 The logs are written to CSVs using `System.IO.StreamWriter`. Using this opens up a file, writes to it and closes it again, to prevent building up local memory usage. However, doing this is quite heavy so you defenitely don't want to do this every frame. To deal with this, you can set the `writeEveryNSeconds` parameter in the LoggingManager. Setting this very low will cause lagg, setting this too high will ramp up the local memory stored and increase the risk of losing data. 
 
 Furthermore, for some loggers it might be quite resource intensive to collect the data. An example is included in the ParticleLogger. Imagine needing to find out how many particles are within a certain trigger collider. Scanning this collider every game update is probably not desired as it will take up a lot of resources. Instead you can make use of the CustomFixedUpdate which updates the data at a set interval. The data is still collected at the same rate, though only updated at a set interval.
+
+## Additional Loggers
+The AdditionalLoggers.zip contains some additional loggers that are only useful for specific situations
+- OmniLogger: Uses the OpenHaptics plugin to log data for the Omni haptic device
+- ObiActorLogger: Scans colliders for Obi particles to determine how many are in / not in those regions.
+- FlexArrayLogger: the same as the ObiActorLogger but for NVIDIA Flex
