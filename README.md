@@ -18,7 +18,7 @@ There is a set of templates you can use to log certain types of data, but if you
 #### Using a template
 This example explains how to log the properties of a RigidBody.
 
-- Import the DataLogging.unitypackage into your Unity project. 
+- Import the DataLogging.unitypackage into your Unity project (find it in the releases). 
   - Drag it into your editor, click import.
 - Create a new Sphere, and give it a RigidBody component
 - Next, attach the RigidBody Logger script.
